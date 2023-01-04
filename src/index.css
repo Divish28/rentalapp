@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+nav{
+  padding: 16px 26px;
+  display: flex;
+  float: right;
+
+}
+
+h1 .welcomeHeading{
+  display: flex;
+  float: left;
+}
+
+nav a{
+  margin-right: 16px;
+}
+
+
+nav a.active{
+  text-decoration: none;
+}

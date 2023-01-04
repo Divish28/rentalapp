@@ -1,0 +1,15 @@
+fieldset{
+    height: 300px;
+    width: 900px;
+    margin-left:400px ;
+}
+
+label{
+    display: inline-block;
+}
+
+input{
+    display: inline-block;
+    margin: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

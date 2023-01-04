@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { Link,NavLink } from 'react-router-dom'
+import './Login.css'
 function Login() {
   return (
     <div>
@@ -12,6 +13,7 @@ function Login() {
                 <input id='login-submit-button'type={"submit"} value="Submit" />
           </fieldset>
         </form>
+        <NavLink to={"Signup"}>New User?</NavLink>
     </div>
   )
 }

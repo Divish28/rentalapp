@@ -1,0 +1,29 @@
+#homepageHeading{
+    padding: 20px;
+    text-align: center;
+    background-color:blanchedalmond;
+}
+.LocationSearch{
+    background-color: blanchedalmond;
+}
+input.areaSearch{
+    /* margin-left: 650px;  */
+    align-items: center;
+    height: 35px;
+    width: 400px;
+}
+
+input.areaSearchButton{
+    height: 35px;
+    font-size: larger;
+    width: 150px;
+}
+
+select{
+    text-align: center;
+    height: 35px;
+    width: 150px;
+    margin-left: 500px;
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+}

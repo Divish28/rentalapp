@@ -1,9 +1,9 @@
-h1.Login-Heading{
+h1.Signup-Heading{
     text-align: center;
 }
 form{
     border: 2px solid;
-    height: 260px;
+    height: 250px;
     width: 400px;
     padding-top: 30px;
     margin-left:40% ;
@@ -24,6 +24,6 @@ button{
     margin-top: 15px;
     margin-left: 38%;
 }
-.New-user{
-    text-align: center;
+.Existing-user{
+    text-align: center ;
 }

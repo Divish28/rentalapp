@@ -1,21 +1,23 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import './Signup.css'
 
 function Signup() {
   return (
     <div>
+       <h1 className='Signup-Heading'>Signup</h1>
         <form>
-            <fieldset>
-                <label >Username</label>
+                <label >Username:</label>
                 <input type={"text"} />
-                <label>email</label>
+                <label>email:</label>
                 <input type={"email"}/>
-                <label>Mobile Number</label>
+                <label>Mobile Number:</label>
                 <input type={"text"}/>
-                <input type={"submit"}/>
-            </fieldset>
+                <button className='Signup-Submit-Button'>Submit</button>
         </form>
-        <NavLink to={'/Login'}>Existing user</NavLink>
+        <div className='Existing-user'>
+            <NavLink to={'/Login'}>Existing user</NavLink>
+        </div>
     </div>
   )
 }

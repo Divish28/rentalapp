@@ -1,8 +1,20 @@
 {
-    "name":[
-        {
-            "first": "divish",
-            "last" : "kumar"
-        }
-    ]
+  "Name": [
+    {
+      "FirstName":"Divish",
+      "LastName":"Kumar"
+    }
+  ],
+  "House": [
+    {
+      "Type":["Appartment","Individual House","villa"],
+      "Rooms":["1RK","2BHK","3BHK","4BHK"],
+      "Floor":["Ground","1","2","3","4","5","6","7"],
+      "Address":[]
+      
+    }
+  ],
+  "Locality": [{
+    "Area": ["Adyar","Avadi","Poonamalli","vadapalani","Gundi","Velachery","Tambaram","perungudi","Thoraipakkam","Shollinganallur","Navalur","Siruseri"]
+  }]
 }

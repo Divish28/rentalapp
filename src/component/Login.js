@@ -13,7 +13,7 @@ function Login() {
                 <input id='login-submit-button'type={"submit"} value="Submit" />
           </fieldset>
         </form>
-        <NavLink to={"Signup"}>New User?</NavLink>
+        <NavLink to={"/Signup"}>New User?</NavLink>
     </div>
   )
 }

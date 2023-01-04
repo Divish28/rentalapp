@@ -15,7 +15,7 @@ function Signup() {
                 <input type={"submit"}/>
             </fieldset>
         </form>
-        <NavLink to={'Login'}>Existing user</NavLink>
+        <NavLink to={'/Login'}>Existing user</NavLink>
     </div>
   )
 }

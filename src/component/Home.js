@@ -1,8 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './home.css'
+import homepic from './House.jpg'
 
 function Home() {
+  
   return (
+    <>
     <div className='LocationSearch'>
         <h1 id='homepageHeading'>Welcome</h1>
         <select name='Location' placeholder='Select Location'>
@@ -15,7 +19,12 @@ function Home() {
         </select>
         <input className='areaSearch' type={"search"} placeholder="Enter Locality" />
         <input className='areaSearchButton' type={'submit'} value="search"/>
+        {/* <Link to={'/Chennai'}>Chennai</Link> */}
     </div>
+    <div>
+      <img src={homepic}/>
+    </div>
+    </>
   )
 }
 

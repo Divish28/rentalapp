@@ -5,7 +5,7 @@ function Login() {
   return (
     <div>
       <h1 className='Login-Heading'>Login</h1>
-        <form>
+        <form className='Login-form'>
                 <label id='Login-username-label' >Username:</label>
                 <input id='Login-username-input' type={"email"} required/>
                 <label id='Login-password-label'>Password:</label>

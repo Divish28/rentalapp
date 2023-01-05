@@ -9,7 +9,7 @@ function Signup() {
         <form>
                 <label >Username:</label>
                 <input type={"text"} />
-                <label>email:</label>
+                <label>E-mail:</label>
                 <input type={"email"}/>
                 <label>Mobile Number:</label>
                 <input type={"text"}/>

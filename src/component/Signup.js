@@ -6,7 +6,7 @@ function Signup() {
   return (
     <div>
        <h1 className='Signup-Heading'>Signup</h1>
-        <form>
+        <form className='Signup-form'>
                 <label >Username:</label>
                 <input type={"text"} />
                 <label>E-mail:</label>

@@ -1,43 +1,40 @@
 import React, { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
-// import './Css/home.css'
+import { useNavigate } from 'react-router-dom'
+import './Css/home.css'
 import homepic from './Images/House.jpg'
 
 const Home=()=> {
-  
-  const [location,setLocation]=useState(null)
-  
-  
-
-  const pages= (e)=>{
+  const options=["Chennai","Bengaluru","Kochi","Mumbai","Delhi"]
+  const navigate=useNavigate()
+  const [location,setLocation]=useState(options[0])
+  const submit=(e)=>{
     e.preventDefault()
-    console.log("display")
+    navigate(location)
+    console.log(location)
   }
+  // const pages= (e)=>{
+  //   e.preventDefault()
+  //   setLocation(()=>{
+  //       location=e.target.value
+  //   })
+  //   console.log("display")
+  // }
 
   return (
     <>
 
     <div className='LocationSearch'>
         <h1 id='homepageHeading'>Welcome</h1>
-        <form className='city-from' onSubmit={pages}>
-        <select onChange={(e)=>{console.log(e)}} id='City' name='Location' placeholder='Select Location'>
-            <option value={"Select"} >--Select City--</option>
-            <option value={"Chennai"}> Chennai</option>
-            <option value={"Bengaluru"}>Bengaluru</option>
-            <option value={"Mubmai"}>Mumbai</option>
-            <option value={"Delhi"}>Delhi</option>
-            <option value={"Kochi"}>Kochi</option>
-        </select>
+        <form className='city-from' onSubmit={submit}>
+          <select value={location} onChange={(e)=>setLocation(e.target.value)}>
+            {options.map((value)=>(<option value={value} key={value}>{value}</option>))}
+          </select>
         <input name='Locality' className='areaSearch' type="search" placeholder="Enter Locality" />
         <input className='areaSearchButton' type='submit' value="search"/>
         </form>
-
-    </div>
-    <div id='Error-Navigate'>
-      <h1></h1>
     </div>
     <div>
-      {/* <img src={homepic}/> */}
+      <img src={homepic}/>
     </div>
     </>
   )

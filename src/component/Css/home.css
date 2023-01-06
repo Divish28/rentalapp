@@ -20,6 +20,7 @@ input.areaSearchButton{
 }
 
 select{
+   
     text-align: center;
     height: 35px;
     width: 150px;
@@ -30,3 +31,4 @@ select{
 img{
     width:1830px
 }
+

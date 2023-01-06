@@ -1,7 +1,8 @@
-import axios, { Axios } from 'axios'
-import React, { useEffect, useState } from 'react'
+// import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function Chennai() {
+  const navigate=useNavigate()
   // const url="https://mocki.io/v1/21356917-7681-4858-a074-7e9be61376a4"
   // const[location,setlocation]=useState(null);
   // const[error,setError]=useState(null);
@@ -25,7 +26,8 @@ function Chennai() {
 
   return (
     <div>
-        <h1>Related properties for your search In Chennai</h1>
+        <h1>This is the Related properties for your search In Chennai</h1>
+        <button onClick={()=>navigate(-1)} >Back</button>
     </div>
   )
 }

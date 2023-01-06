@@ -34,7 +34,7 @@ const Home=()=> {
         </form>
     </div>
     <div>
-      <img src={homepic}/>
+      <img src={homepic} alt='Home' />
     </div>
     </>
   )

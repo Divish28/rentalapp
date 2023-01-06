@@ -1,42 +1,26 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import './home.css'
-import homepic from './House.jpg'
+import React, { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+// import './Css/home.css'
+import homepic from './Images/House.jpg'
 
-function Home() {
+const Home=()=> {
   
-  function display(){
-    const city=document.getElementById('#City')
-    const disp=document.getElementById("#Error-Display")
-    if (city="Chennai") {
+  const [location,setLocation]=useState(null)
+  
+  
 
-      return(<Link to='/Chennai'/>)
-      
-    } 
-    else if(city="Mumbai"){
-      return(<Link to='/Mumbai'/>)
-    }
-    else if(city="Bengaluru"){
-      return(<Link to='/Bengaluru'/>)
-    }
-    else if(city="Delhi"){
-      return (<Link to='/Delhi'/>)
-    }
-    else if(city="Kochi"){
-      return (<Link to="/Kochi"/>)
-    }
-    else {
-
-      return(disp.textContent("Enter Correct Number"))
-    }
-
+  const pages= (e)=>{
+    e.preventDefault()
+    console.log("display")
   }
 
   return (
     <>
+
     <div className='LocationSearch'>
         <h1 id='homepageHeading'>Welcome</h1>
-        <select id='City' name='Location' placeholder='Select Location'>
+        <form className='city-from' onSubmit={pages}>
+        <select onChange={(e)=>{console.log(e)}} id='City' name='Location' placeholder='Select Location'>
             <option value={"Select"} >--Select City--</option>
             <option value={"Chennai"}> Chennai</option>
             <option value={"Bengaluru"}>Bengaluru</option>
@@ -44,14 +28,16 @@ function Home() {
             <option value={"Delhi"}>Delhi</option>
             <option value={"Kochi"}>Kochi</option>
         </select>
-        <input className='areaSearch' type={"search"} placeholder="Enter Locality" />
-        <input className='areaSearchButton' type={'submit'} value="search"/>
+        <input name='Locality' className='areaSearch' type="search" placeholder="Enter Locality" />
+        <input className='areaSearchButton' type='submit' value="search"/>
+        </form>
+
     </div>
-    <div id='Error-Display'>
+    <div id='Error-Navigate'>
       <h1></h1>
     </div>
     <div>
-      <img src={homepic}/>
+      {/* <img src={homepic}/> */}
     </div>
     </>
   )

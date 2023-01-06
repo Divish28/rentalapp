@@ -1,10 +1,18 @@
 {
-  "Name": [
+  "Login": [
     {
-      "FirstName":"Divish",
-      "LastName":"Kumar"
+      "Username":["Divish"],
+      "Password":["Aspiresys"]
     }
   ],
+  "Signup":[
+    {
+      "Username":["Divish"],
+      "Email":["divish.karthikeyan@gmail.com"],
+      "Password":["Aspiresys"]
+    }
+  ]
+  ,
   "House": [
     {
       "Type":["Appartment","Individual House","villa"],

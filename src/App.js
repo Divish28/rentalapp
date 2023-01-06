@@ -8,7 +8,10 @@ import Signup from './component/Signup';
 import Home from './component/Home';
 import Heading from './component/Heading';
 import Chennai from './component/Chennai';
-
+import Mumbai from './component/Mumbai'
+import Bengaluru from './component/Bengaluru'
+import Delhi from './component/Delhi'
+import Kochi from './component/Kochi'
 
 function App() {
   return (
@@ -21,6 +24,10 @@ function App() {
         <Route path='Login' element={<Login/>}/>
         <Route path='Signup' element={<Signup/>}/>
         <Route path='Chennai' element={<Chennai/>}/>
+        <Route path='Mumbai' element={<Mumbai/>}/>
+        <Route path='Bengaluru' element={<Bengaluru/>}/>
+        <Route path='Delhi' element={<Delhi/>}/>
+        <Route path='Kochi' element={<Kochi/>}/>
         <Route path='*' element={<InvalidUrl/>}/>
       </Routes>
       

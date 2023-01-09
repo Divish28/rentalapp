@@ -1,28 +1,28 @@
 {
-  "Login": [
+  "login": [
     {
-      "Username":["Divish"],
-      "Password":["Aspiresys"]
+      "userName":["Divish"],
+      "password":["Aspiresys"]
     }
   ],
-  "Signup":[
+  "signup":[
     {
-      "Username":["Divish"],
-      "Email":["divish.karthikeyan@gmail.com"],
-      "Password":["Aspiresys"]
+      "userName":["Divish"],
+      "email":["divish.karthikeyan@gmail.com"],
+      "password":["Aspiresys"]
     }
   ]
   ,
-  "House": [
+  "house": [
     {
-      "Type":["Appartment","Individual House","villa"],
-      "Rooms":["1RK","2BHK","3BHK","4BHK"],
-      "Floor":["Ground","1","2","3","4","5","6","7"],
-      "Address":[]
+      "type":["Appartment","Individual House","villa"],
+      "rooms":["1RK","2BHK","3BHK","4BHK"],
+      "floor":["Ground","1","2","3","4","5","6","7"],
+      "address":[]
       
     }
   ],
-  "Locality": [{
-    "Area": ["Adyar","Avadi","Poonamalli","vadapalani","Gundi","Velachery","Tambaram","perungudi","Thoraipakkam","Shollinganallur","Navalur","Siruseri"]
+  "locality": [{
+    "area": ["Adyar","Avadi","Poonamalli","vadapalani","Gundi","Velachery","Tambaram","perungudi","Thoraipakkam","Shollinganallur","Navalur","Siruseri"]
   }]
 }

@@ -4,21 +4,15 @@ import './Css/home.css'
 import homepic from './Images/House.jpg'
 
 const Home=()=> {
-  const options=["Chennai","Bengaluru","Kochi","Mumbai","Delhi"]
+  const city=["Chennai","Bengaluru","Kochi","Mumbai","Delhi"]
   const navigate=useNavigate()
-  const [location,setLocation]=useState(options[0])
+  const [location,setLocation]=useState(city[0])
+
   const submit=(e)=>{
     e.preventDefault()
     navigate(location)
-    console.log(location)
+    // console.log(location)
   }
-  // const pages= (e)=>{
-  //   e.preventDefault()
-  //   setLocation(()=>{
-  //       location=e.target.value
-  //   })
-  //   console.log("display")
-  // }
 
   return (
     <>
@@ -27,7 +21,7 @@ const Home=()=> {
         <h1 id='homepageHeading'>Welcome</h1>
         <form className='city-from' onSubmit={submit}>
           <select value={location} onChange={(e)=>setLocation(e.target.value)}>
-            {options.map((value)=>(<option value={value} key={value}>{value}</option>))}
+            {city.map((value)=>(<option value={value} key={value}>{value}</option>))}
           </select>
         <input name='Locality' className='areaSearch' type="search" placeholder="Enter Locality" />
         <input className='areaSearchButton' type='submit' value="search"/>

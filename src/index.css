@@ -12,11 +12,12 @@ code {
     monospace;
 }
 
-nav{
+/* nav{
+  position:fixed;
   padding: 16px 26px;
   display: flex;
   float: right;
-}
+} */
 
 h1 .welcomeHeading{
   display: flex;

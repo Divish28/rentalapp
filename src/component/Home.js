@@ -19,11 +19,12 @@ const Home=()=> {
 
     <div className='LocationSearch'>
         <h1 id='homepageHeading'>Welcome</h1>
+        <h4>Select Your City</h4>
         <form className='city-from' onSubmit={submit}>
           <select value={location} onChange={(e)=>setLocation(e.target.value)}>
             {city.map((value)=>(<option value={value} key={value}>{value}</option>))}
           </select>
-        <input name='Locality' className='areaSearch' type="search" placeholder="Enter Locality" />
+        {/* <input name='Locality' className='areaSearch' type="search" placeholder="Enter Locality" /> */}
         <input className='areaSearchButton' type='submit' value="search"/>
         </form>
     </div>

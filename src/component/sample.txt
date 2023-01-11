@@ -1,0 +1,150 @@
+{
+  "login": [
+    {
+      "userName":["Divish"],
+      "password":["Aspiresys"]
+    }
+  ],
+  "signup":[
+    {
+      "userName":"Divish",
+      "email":"divish.karthikeyan@gmail.com",
+      "mobileNumber":"7904120417",
+      "password":"Aspiresys"
+    }
+  ]
+  ,
+  "house": [
+    {
+      "type":["Appartment","Individual House","villa"],
+      "rooms":["1RK","2BHK","3BHK","4BHK"],
+      "floor":["Ground","1","2","3","4","5","6","7"],
+      "address":[]
+      
+    }
+  ],
+  "locality": [{
+    "area": ["Adyar","Avadi","Poonamalli","vadapalani","Gundi","Velachery","Tambaram","perungudi","Thoraipakkam","Shollinganallur","Navalur","Siruseri"]
+  }],
+
+  "chennai":[{
+      "guindy":[{
+        "type":{},
+        "name":{},
+        "rooms":{},
+        "floor":{}
+      }]
+    },
+    {
+      "velachery":[{
+        "type":{},
+        "name":{},
+        "rooms":{},
+        "floor":{}
+      }]
+    },
+    {
+      "vadapalani":[{
+        "type":{},
+        "name":{},
+        "rooms":{},
+        "floor":{}
+
+      }]
+    },
+    {
+      "tnagar":[{
+        "type":{},
+        "name":{},
+        "rooms":{},
+        "floor":{}
+
+      }]
+    },
+    {
+      "anna nagar":[{
+        "type":{},
+        "houseName":{},
+        "rooms":{},
+        "floor":{}
+      }]
+    },
+    {
+      "besant nagar":[{
+        "type":{},
+        "houseName":{},
+        "rooms":{},
+        "floor":{}
+      }]
+    }]
+}
+
+
+
+//signup
+
+// import axios from 'axios'
+// import { Alert } from 'bootstrap'
+// import React, { useState } from 'react'
+// import { toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
+// import { json, NavLink } from 'react-router-dom'
+// import './Css/Signup.css'
+
+
+
+// const Signup =()=> {
+
+//   const[userName,setUsername]=useState("")
+//   const[email,setEmail]=useState("")
+//   const[mobileNumber,setMobileNumber]=useState("")
+//   const[password,setPassword]=useState("")
+//   // const[message,setMessage]=useState("")
+
+
+//   const handlesubmit=(e)=>{
+//     e.preventDefault()
+//     let storeDetails = {userName,email,mobileNumber,password}
+//     console.log(storeDetails)
+//     axios.post("http://localhost:3000/user",storeDetails).then((res)=>{
+//       // toast.success("registerd Sucessfully")
+//       Alert("Registered Successfully")
+//     }).catch((error)=>{
+//       toast.fail("Registration Failed")
+//       // Alert("Registration Failed"+error.message)
+//     })
+//     // try {
+//     //   await axios.post('http://localhost:3000/signup',storeDetails).then()
+//     //   alert("Registered sucessfully")
+//     // } catch(error){
+//     //   if(error.message){
+//     //     console.log(error)
+//     //   }
+//     // }
+  
+//   }
+
+//   return (
+//     <div>
+//        <h1 className='Signup-Heading'>Signup</h1>
+//         <form className='Signup-form' onSubmit={handlesubmit}>
+//                 <label >Username:</label>
+//                 <input value={userName} onChange={(e)=>setUsername(e.target.value)} type="text" />
+//                 <label>E-mail:</label>
+//                 <input value={email} onChange={(e)=>setEmail(e.target.value)} type="email"/>
+//                 <label>Mobile Number:</label>
+//                 <input value={mobileNumber} onChange={(e)=>setMobileNumber(e.target.value)} type="text"/>
+//                 <label>Password:</label>
+//                 <input value={password} onChange={(e)=>setPassword(e.target.value)} type="password"/>
+//                 <button type='submit'>Register</button>
+//                 {/* <input id='signup-submit' type="submit"/> */}
+//                 {/* <input value={message} onChange={(e)=>setMessage(e.target.value)} type="warning"/> */}
+//         </form>
+//         <div className='Existing-user'>
+//             <NavLink to={'/Login'}>Existing user</NavLink>
+//         </div>
+//     </div>
+//   )
+// }
+
+// export default Signup

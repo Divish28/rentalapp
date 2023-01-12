@@ -22,60 +22,22 @@
       "id": 3
     },
     {
-      "userName": "asp",
-      "email": "asp@emailn.vonm",
-      "mobileNumber": "12345678909876",
-      "password": "12345678ujbgr",
+      "userName": "Divish ",
+      "email": "Kumar12@gmail.com",
+      "mobileNumber": "7904120417",
+      "password": "12wedfvbhu8",
       "id": 4
-    },
+    }
+  ],
+  "houses":[
     {
-      "userName": "div",
-      "email": "diiv@fnhi.com",
-      "mobileNumber": "123456780",
-      "password": "23nndr@479n",
-      "id": 5
-    },
-    {
-      "userName": "div",
-      "email": "diiv@fnhi.com",
-      "mobileNumber": "123456780",
-      "password": "23nndr@479n",
-      "id": 6
-    },
-    {
-      "userName": "div",
-      "email": "diiv@fnhi.com",
-      "mobileNumber": "123456780",
-      "password": "23nndr@479n",
-      "id": 7
-    },
-    {
-      "userName": "div",
-      "email": "diiv@fnhi.com",
-      "mobileNumber": "123456780",
-      "password": "23nndr@479n",
-      "id": 8
-    },
-    {
-      "userName": "div",
-      "email": "diiv@fnhi.com",
-      "mobileNumber": "123456780",
-      "password": "23nndr@479n",
-      "id": 9
-    },
-    {
-      "userName": "ijn",
-      "email": "dxrftc@hnj.bhj",
-      "mobileNumber": "123456789098y",
-      "password": "esdxcft6789",
-      "id": 10
-    },
-    {
-      "userName": "567890jn",
-      "email": "awsed@bnbj.vyub",
-      "mobileNumber": "2q2345658",
-      "password": "cghbn jh5r6yuhjbnm",
-      "id": 11
+      "owner":"",
+      "city":"",
+      "category":"",
+      "houseName":"",
+      "type":"",
+      "Houseimg":""
+
     }
   ]
 }

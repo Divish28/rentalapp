@@ -27,17 +27,20 @@
       "mobileNumber": "7904120417",
       "password": "12wedfvbhu8",
       "id": 4
-    }
-  ],
-  "houses":[
+    },
     {
-      "owner":"",
-      "city":"",
-      "category":"",
-      "houseName":"",
-      "type":"",
-      "Houseimg":""
-
+      "userName": "Deepi",
+      "email": "Deepi@gmail.com",
+      "mobileNumber": "123456789098",
+      "password": "Nttdata@india",
+      "id": 5
+    },
+    {
+      "userName": "Divish",
+      "email": "divish@gmail.com",
+      "mobileNumber": "782389489",
+      "password": "bzxchawkehms",
+      "id": 6
     }
   ]
 }

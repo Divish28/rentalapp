@@ -1,0 +1,53 @@
+const HouseData = [
+    {
+        id:1,
+        city:"Chennai",
+        category:"Apartment",
+        type:"2BHK",
+        addimg:"https://www.google.com/search?q=House+images+in+india&oq=house+&aqs=chrome.1.69i57j69i59l2j46i433i512j0i433i512j69i60l3.4129j0j7&sourceid=chrome&ie=UTF-8#imgrc=FsVXKcidS9_DrM",
+    },
+    {
+        id:2,
+        city:"Dehli",
+        category:"Apartment",
+        type:"2BHK",
+        addimg:"/home/asplap3249/Desktop/React/rentalapp/src/component/House/house2.jpg",
+    },
+    {
+        id:3,
+        city:"Mumbai",
+        category:"Individual",
+        type:"2BHK",
+        addimg:"/home/asplap3249/Desktop/React/rentalapp/src/component/House/house3.jpg",
+    },
+    {
+        id:4,
+        city:"Chennai",
+        category:"Apartment",
+        type:"2BHK",
+        addimg:"/home/asplap3249/Desktop/React/rentalapp/src/component/House/house4.jpg",
+    },
+    {
+        id:5,
+        city:"Chennai",
+        category:"Apartment",
+        type:"2BHK",
+        addimg:"/home/asplap3249/Desktop/React/rentalapp/src/component/House/house5.jpg",
+    },
+    {
+        id:6,
+        city:"Chennai",
+        category:"Apartment",
+        type:"2BHK",
+        addimg:"/home/asplap3249/Desktop/React/rentalapp/src/component/House/house6.jpg",
+    },
+    {
+        id:7,
+        city:"Chennai",
+        category:"Apartment",
+        type:"2BHK",
+        addimg:"/home/asplap3249/Desktop/React/rentalapp/src/component/House/house7.jpg",
+    }
+]
+
+export default HouseData

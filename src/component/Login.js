@@ -1,7 +1,8 @@
 import axios from 'axios'
 import React, { useEffect, useRef, useState } from 'react'
 import { json, Navigate, NavLink, useNavigate } from 'react-router-dom'
-import './Css/Login.css'
+import { toast } from 'react-toastify'
+import './css/Login.css'
 import Home from './Home'
  
 const Login=()=> {
@@ -14,98 +15,45 @@ const Login=()=> {
     sessionStorage.clear()
   })
 
-  const loginverify = (e) =>{
-    if(validate()){
+  const loginverify = (e) =>{ 
+    if((validate)=>{
+      let result = true;
+      if (email === '' || email === null) {
+        result = false;
+        alert("Enter Username");
+      }
+      if (password === '' || password === null) {
+        result = false;
+        alert("Enter Password");
+      }
+      return result;
+    }){
       e.preventDefault()
       // console.log("process ")
-      axios.get("http://localhost:8000/user?email"+email).then((res)=>{
-        return res.data
-      }).then((resp)=>{
-        if (Object.keys(resp).length===0){
-          alert("Enter valid username")
+      axios.get("http://localhost:8000/user?email=" + email).then((res)=>{
+        return res.data;
+      }).then((resp) => {
+        if (Object.keys(resp).length === 0) {
+          // toast.error("Enter Correct Email")
+          alert("Enter Correct Email")
         }
-        else{
-          if(resp.password === password){
-            alert("login sucessful")
-            sessionStorage("email",email)
-            navigate(Home)
+        else {
+          if (resp[0].password === password) {
+            alert("Login Success")
+            // toast.success("Login Sucess")
+            sessionStorage.setItem('email', email);
+            navigate(Home);
           }
-          else{
-            console.log(resp.data)
-            alert("enter correct password")
+          else {
+            // toast.error("Enter Correct Password")
+            alert("Enter Correct Password");
           }
         }
-      }).catch((err)=>{
-        alert("Login failed "+err)
-      })
+      }).catch((err) => {
+        alert("Login Failed:" + err.message);
+      });
     }
   }
-
-  // const loginverify=(e)=>{
-  //   e.preventDefault()
-  //   if((validate)=>{
-  //     let result=true
-  //     if(email === "" || email === null ){
-  //       result=false
-  //       alert("enter Mail")
-  //     }
-  //     if(password === "" || password === null){
-  //       result=false
-  //       alert("enter password")
-  //     }
-  //   }){
-  //     console.log("proceed")
-  //   }
-  // }
-
-  // const loginverify = (e)=>{
-  //   e.preventDefault()
-  //   if((validate)=>{
-  //   let result=true
-  //   if(email === "" || email === null){
-  //     result=false
-  //     alert('enter email')
-  //   }
-  //   if(password === "" || password === null){
-  //     result=false
-  //     alert("Enter password")
-  //   }  
-
-  //   ){
-  //     console.log("proceed")
-  //     axios.get("http://localhost:8000/user/"+userName").then((res)=>{
-  //       return res.json()
-  //     }).then((resp)=>{
-  //       if(Object.keys(resp).length===0){
-  //         alert("Enter Valid username")
-  //       }
-  //       else{
-  //         if(resp.password===password){
-  //           alert("Login Sucessful")
-  //           navigate("./Home")
-  //         }
-  //         else{
-  //           alert("enter Valid password")
-  //         }
-  //       }
-  //     }).catch((err)=>{
-  //       alert("login failed"+err)
-  //     })
-  //   }
-  // }
-
-  const validate = () => {
-    let result = true;
-    if (email === '' || email === null) {
-            result = false;
-            alert("Invalid Username");
-    }
-    if (password === '' || password === null) {
-            result = false;
-            alert("Invalid Password");
-    }
-    return result;
-}
 
 
 

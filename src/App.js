@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Login from './component/Login';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 import Navbar from './component/Navbar';
 import InvalidUrl from './component/InvalidUrl';
 import Signup from './component/Signup';
@@ -12,9 +12,15 @@ import Mumbai from './component/Mumbai'
 import Bengaluru from './component/Bengaluru'
 import Delhi from './component/Delhi'
 import Kochi from './component/Kochi'
+import HouseList from './component/HouseList';
+import { AuthProvider } from './component/auth';
 
-function App() {
+
+const App=()=> {
+
+
   return (
+    
     <div>
       <Navbar/>
       <Heading/>
@@ -23,31 +29,17 @@ function App() {
         <Route path='Home' element={<Home/>}/>
         <Route path='Login' element={<Login/>}/>
         <Route path='Signup' element={<Signup/>}/>
-        <Route path='Chennai' element={<Chennai/>}/>
-        <Route path='Mumbai' element={<Mumbai/>}/>
-        <Route path='Bengaluru' element={<Bengaluru/>}/>
-        <Route path='Delhi' element={<Delhi/>}/>
-        <Route path='Kochi' element={<Kochi/>}/>
+        <Route path='/Chennai' element={<Chennai/>}/>
+        <Route path='/Mumbai' element={<Mumbai/>}/>
+        <Route path='/Bengaluru' element={<Bengaluru/>}/>
+        <Route path='/Delhi' element={<Delhi/>}/>
+        <Route path='/Kochi' element={<Kochi/>}/>
+        <Route path='/HouseList' element={<HouseList/>}/>
         <Route path='*' element={<InvalidUrl/>}/>
       </Routes>
       
+
     </div>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
   );
 }
 

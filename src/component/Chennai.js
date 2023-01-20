@@ -1,10 +1,13 @@
 // import React, { useEffect, useState } from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import ing from '../component/house/house1.jpg'
 
 function Chennai() {
   const navigate=useNavigate()
   const[location,setLocation]=useState("")
+
+  
   // const url="https://mocki.io/v1/21356917-7681-4858-a074-7e9be61376a4"
   // const[location,setlocation]=useState(null);
   // const[error,setError]=useState(null);
@@ -30,6 +33,7 @@ function Chennai() {
     <div>
         <h1>This is the Related properties for your search In Chennai</h1>
         <form>
+
           <input type="text" placeholder="Search Locality" />
         </form>
         <button onClick={()=>navigate(-1)} >Back</button>

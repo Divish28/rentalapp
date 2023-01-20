@@ -168,41 +168,23 @@ const SignIn = () => {
                         //implementing login functionalities
                         axios.get("http://localhost:8000/SignIn?email=" + email).then((res) => {
                                 console.log(res.data);
-
                                 return res.data;
-
                         }).then((resp) => {
-
                                 console.log(resp);
-
                                 if (Object.keys(resp).length === 0) {
-
                                         alert("Invalid Email")
-
                                 }
-
                                 else {
-
                                         if (resp[0].password === password) {
-
                                                 alert("Login Success")
-
                                                 sessionStorage.setItem('email', email);
-
                                                 navigate("/Product");
-
                                         }
-
                                         else {
-
                                                 alert("Invalid Password");
-
                                         }
-
                                 }
-
                         }).catch((err) => {
-
                                 alert("Login Failed:" + err.message);
                         });
                 }

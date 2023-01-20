@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import './Css/home.css'
-import homepic from './Images/House.jpg'
+import './css/home.css'
+import homepic from './images/House.jpg'
 
 const Home=()=> {
   const city=["Chennai","Bengaluru","Kochi","Mumbai","Delhi"]
@@ -19,7 +19,7 @@ const Home=()=> {
 
     <div className='LocationSearch'>
         <h1 id='homepageHeading'>Welcome</h1>
-        <h4>Select Your City</h4>
+        {/* <h4>Select Your City</h4> */}
         <form className='city-from' onSubmit={submit}>
           <select value={location} onChange={(e)=>setLocation(e.target.value)}>
             {city.map((value)=>(<option value={value} key={value}>{value}</option>))}

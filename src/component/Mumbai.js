@@ -6,7 +6,7 @@ function Mumbai() {
   return (
     <div>
       <h2>This the related places for your search in Mumbai</h2>
-      <button onClick={()=>navigate(-1)}>Go Back</button>
+      <button onClick={()=>navigate('/')}>Go Back</button>
     </div>
   )
 }
